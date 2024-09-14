@@ -7,9 +7,12 @@
     <title>Alpine.js with Vite</title>
 </head>
 <body>
-    <div x-data="{ open: false }">
+    <div 
+    x-data="{ open: false }"
+    class="min-h-screen flex flex-col items-center justify-center"
+    >
         <button @click="open = !open">Toggle</button>
-        <p class="text-red-500" x-show="open">Hello, Alpine.js!</p>
+        <p class="text-blue-500" x-show="open">Hello, Alpine.js!</p>
     </div>
 
     <script type="module" src="./assets/main.js"></script>
