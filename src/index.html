@@ -14,15 +14,12 @@
         justify-center gap-6 overflow-hidden
         "
     >
-        <!-- Heading -->
         <h1 
             x-text="message" 
             class="text-4xl font-bold my-6"
         ></h1>
 
-        <!-- Input and Button -->
         <div class="flex gap-4">
-            <!-- Input -->
             <input 
                 x-model="message" 
                 type="text" 
@@ -33,7 +30,6 @@
                 "
             />
 
-            <!-- Button -->
             <button 
                 x-on:click="message = 'Start typing...'"
                 x-text="'Reset'"
@@ -45,7 +41,6 @@
             />
         </div>
 
-        <!-- Footer text -->
         <p class="text-xs text-zinc-600">Made with Alpine.js</p>
     </div>
 
