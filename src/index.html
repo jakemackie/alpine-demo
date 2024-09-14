@@ -6,19 +6,45 @@
     <link rel="stylesheet" href="./assets/global.css">
     <title>Alpine.js with Vite</title>
 </head>
-<body>
+<body class="bg-black text-white">
     <div 
-    x-data="{ open: false }"
-    class="min-h-screen flex flex-col gap-6 items-center justify-center"
+        x-data="{ message: 'Type something...' }"
+        class="
+        container mx-auto min-h-screen flex flex-col 
+        gap-6 items-center justify-center
+        "
     >
-        <button
-        class="shadow-md px-4 py-2 rounded-md"
-        @click="open = !open"
-        >
-            Toggle
-        </button>
+        <!-- Text -->
+        <h1 
+            x-text="message" 
+            class="text-4xl font-bold"
+        ></h1>
 
-        <p class="text-blue-500" x-show="open">Hello, Alpine.js!</p>
+        <!-- Input -->
+        <input 
+            x-model="message" 
+            type="text" 
+            class="
+            w-full px-4 py-2 bg-black border 
+            border-zinc-700 rounded-md
+            hover:border-blue-700 outline-none
+            focus:border-blue-500 transition-colors
+            duration-300 ease-in-out
+            "
+        >
+
+        <!-- Button -->
+        <button 
+            x-on:click="message = 'Type something...'"
+            class="
+            w-full px-4 py-2 border border-zinc-800 
+            rounded-md hover:text-red-400
+            focus:border-red-400 transition-colors 
+            duration-300 ease-in-out
+            "
+        >
+            Reset State
+        </button>
     </div>
 
     <script type="module" src="./assets/main.js"></script>
