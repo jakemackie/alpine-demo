@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine.js with Vite</title>
+</head>
+<body>
+    <div x-data="{ open: false }">
+        <button @click="open = !open">Toggle</button>
+        <p x-show="open">Hello, Alpine.js!</p>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
