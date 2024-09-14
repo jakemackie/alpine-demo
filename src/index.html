@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/global.css">
     <title>Alpine.js with Vite</title>
 </head>
 <body>
     <div x-data="{ open: false }">
         <button @click="open = !open">Toggle</button>
-        <p x-show="open">Hello, Alpine.js!</p>
+        <p class="text-red-500" x-show="open">Hello, Alpine.js!</p>
     </div>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./assets/main.js"></script>
 </body>
 </html>
