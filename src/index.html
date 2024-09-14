@@ -9,9 +9,15 @@
 <body>
     <div 
     x-data="{ open: false }"
-    class="min-h-screen flex flex-col items-center justify-center"
+    class="min-h-screen flex flex-col gap-6 items-center justify-center"
     >
-        <button @click="open = !open">Toggle</button>
+        <button
+        class="shadow-md px-4 py-2 rounded-md"
+        @click="open = !open"
+        >
+            Toggle
+        </button>
+
         <p class="text-blue-500" x-show="open">Hello, Alpine.js!</p>
     </div>
 
