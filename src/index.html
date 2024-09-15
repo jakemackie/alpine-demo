@@ -10,8 +10,8 @@
     <div 
         x-data="{ message: 'Start typing...' }"
         class="
-        container min-h-screen mx-auto flex flex-col items-center 
-        justify-center gap-6 overflow-hidden
+        relative container min-h-screen mx-auto flex flex-col 
+        items-center justify-center gap-6 overflow-hidden
         "
     >
         <h1 
@@ -42,6 +42,8 @@
         </div>
 
         <p class="text-xs text-zinc-600">Made with Alpine.js</p>
+
+        <div class="absolute z-10 pointer-events-none bg-blue-600 opacity-5 h-60 w-96 rounded-full blur-xl"></div>
     </div>
 
     <script type="module" src="./assets/main.js"></script>
