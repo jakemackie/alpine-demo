@@ -1,5 +1,5 @@
 {
-  "name": "alpine-vite-project",
+  "name": "alpine-demo",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
